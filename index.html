@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoichi Hatano — Software Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Shoichi Hatano</h1>
+      <p class="subtitle">
+        Software Design Student at TH Aschaffenburg &middot; Backend Systems, REST APIs &amp; Applied AI
+      </p>
+      <nav class="links">
+        <a href="https://github.com/[username]" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:[your.email@example.com]">Email</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a third-semester B.Sc. Software Design International student based in Aschaffenburg, Germany,
+          currently seeking a <strong>Werkstudent</strong> or <strong>Praktikum</strong> role. I enjoy designing
+          structured backend services, clean HTTP/JSON contracts, and practical automation pipelines that integrate
+          LLM APIs into everyday workflows.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section>
+        <h2>Selected Projects</h2>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>Video Hub Control Plane</h3>
+            <a href="https://github.com/[username]/[video-hub-repo]" target="_blank" rel="noopener">Source &rarr;</a>
+          </div>
+          <p>
+            A zero-disk-footprint media ingestion and streaming web service built to stream video remotely to an iPad
+            over Tailscale without storing large files permanently on disk.
+          </p>
+          <pre class="architecture"><code>Client (iPad) ──▶ FastAPI + Pydantic ──▶ yt-dlp / FFmpeg Stream
+                        │
+                        ▼
+               SQLite (SQLAlchemy)</code></pre>
+          <ul class="tags">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>Pydantic</li>
+            <li>SQLite</li>
+            <li>SQLAlchemy</li>
+            <li>FFmpeg</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>Automated Music Ingestion Service (<code>ytdl-bridge</code>)</h3>
+            <a href="https://github.com/[username]/[ytdl-bridge-repo]" target="_blank" rel="noopener">Source &rarr;</a>
+          </div>
+          <p>
+            A background ingestion service that fetches audio tracks, resolves track metadata via acoustic
+            fingerprinting, and organizes files automatically into a self-hosted Navidrome music server.
+          </p>
+          <pre class="architecture"><code>URL Request ──▶ Flask API ──▶ yt-dlp ──▶ beets (AcoustID) ──▶ Navidrome Library</code></pre>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>beets</li>
+            <li>Chromaprint / AcoustID</li>
+            <li>Navidrome</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>Browser Dictionary &amp; Sentence Lookup Extension</h3>
+            <a href="https://github.com/[username]/[extension-repo]" target="_blank" rel="noopener">Source &rarr;</a>
+          </div>
+          <p>
+            A Chromium/Brave Manifest V3 browser extension for instant English and German word or sentence lookup,
+            combining dictionary APIs with structured LLM explanations inside an isolated Shadow DOM overlay.
+          </p>
+          <pre class="architecture"><code>Selected Text ──▶ Content Script (Shadow DOM) ──▶ Background Worker ──▶ Dictionary / OpenRouter API</code></pre>
+          <ul class="tags">
+            <li>JavaScript</li>
+            <li>Manifest V3</li>
+            <li>REST / JSON</li>
+            <li>OpenRouter API</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>5Pixels — Campus Onboarding Game</h3>
+            <a href="https://github.com/[username]/[5pixels-repo]" target="_blank" rel="noopener">Source &rarr;</a>
+          </div>
+          <p>
+            A 2D campus introduction game built in a five-person university software engineering team. Served as Lead
+            Programmer, focusing on modular game logic, state transitions, and GitLab workflow coordination.
+          </p>
+          <ul class="tags">
+            <li>Godot 4</li>
+            <li>GDScript</li>
+            <li>GitLab</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <h2>Technical Stack</h2>
+        <div class="skills-grid">
+          <div>
+            <strong>Languages</strong>
+            <p>Python, Java, JavaScript, SQL, C (basics)</p>
+          </div>
+          <div>
+            <strong>Backend &amp; APIs</strong>
+            <p>FastAPI, Flask, Spring Boot (basics), REST / JSON, Pydantic, SQLAlchemy</p>
+          </div>
+          <div>
+            <strong>Databases</strong>
+            <p>SQLite, H2, Relational Schema Design &amp; Normalization</p>
+          </div>
+          <div>
+            <strong>Tools &amp; Environment</strong>
+            <p>Git, GitHub, GitLab, Linux (Ubuntu / WSL), Docker (basics), LaTeX</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & LANGUAGES -->
+      <section>
+        <h2>Education &amp; Languages</h2>
+        <p>
+          <strong>Technische Hochschule Aschaffenburg</strong> — B.Sc. Software Design International (3rd Semester)<br />
+          <span class="muted">Focus: Object-Oriented Programming (Java), Databases &amp; SQL, Software Engineering, Operating Systems</span>
+        </p>
+        <p>
+          <strong>Languages:</strong> Japanese (Native) &middot; English (B2 / IELTS 6.5) &middot; German (A1, studying toward B1/B2)
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Shoichi Hatano &middot; Aschaffenburg, Germany</p>
+    </footer>
+  </div>
+</body>
+</html>
